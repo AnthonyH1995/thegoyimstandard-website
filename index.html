@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Goyim Standard</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="top-bar">
-            <p class="tagline">Seeking Truth  ◆  Standing Firm  ◆  Speaking Plain</p>
-            <p class="est">Est. 2024  ·  Commentary & Truth</p>
-        </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Goyim Standard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --black:        #000000;
+      --black-soft:   #0d0d0d;
+      --black-card:   #141414;
+      --black-border: #222222;
+      --vegas-gold:   #CFB53B;
+      --vegas-light:  #e8d060;
+      --vegas-dim:    #9e8a2d;
+      --white:        #ffffff;
+      --off-white:    #f0ead8;
+      --gray:         #888888;
+      --gray-dark:    #555555;
+    }
 
-        <h1>The Goyim Standard</h1>
-        <p class="bible-quote">"Buy the truth and do not sell it." — Proverbs 23:23</p>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
 
-        <nav id="navigation"></nav>
-    </header>
+    body {
+      background: var(--black);
+      color: var(--off-white);
+      font-family: 'Libre Baskerville', Georgia, serif;
+      min-height: 100vh;
+    }
 
-    <main id="content"></main>
+    /* ── GRAIN OVERLAY ── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
 
-    <footer>
-        <p class="bible-quote">"Buy the truth and do not sell it." — Proverbs 23:23</p>
-        <p>© 2026 The Goyim Standard · All Rights Reserved</p>
-    </footer>
-</body>
-</html>
+    /* Top Bar */
+    .top-bar {
+      background: var(--vegas-gold);
+      color: var(--black);
+      text-align: center;
+      padding: 7px 20px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* Header */
+    header {
+      background: var(--black);
+      border-bottom: 1px solid var(--black-border);
+      padding: 52px 20px 36px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before, header::after {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .header-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 10px;
+      letter-spacing: 6
