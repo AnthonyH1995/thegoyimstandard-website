@@ -1,34 +1,94 @@
 {
+  "siteTitle": "The Goyim Standard",
+  "tagline": "Seeking Truth  ◆  Standing Firm  ◆  Speaking Plain",
+  "est": "Est. 2024",
+  "subtitle": "Commentary & Truth",
+  "bibleQuote": "\"Buy the truth and do not sell it.\" — Proverbs 23:23",
+  "navigation": [
+    {"id": "home", "title": "Home"},
+    {"id": "commentary", "title": "Commentary"},
+    {"id": "faith", "title": "Faith"},
+    {"id": "society", "title": "Society"},
+    {"id": "about", "title": "About"},
+    {"id": "contact", "title": "Contact"}
+  ],
   "sections": [
     {
       "id": "home",
       "title": "Home",
-      "slug": "home"
+      "content": "<h2>Welcome to The Goyim Standard</h2><p>We exist to help you recognize the dark forces working against Whites, Christians, and people of European descent. We reject the lies, notice the patterns, and speak plain truth without apology.</p><p><strong>Christ is King.</strong> Truth does not bend.</p>"
     },
     {
-      "id": "commentary",
-      "title": "Commentary",
-      "slug": "commentary"
+      "id": "featured",
+      "title": "Featured",
+      "posts": [
+        {
+          "category": "Commentary",
+          "title": "Truth Doesn't Need a Majority Vote — It Only Needs to Be Said",
+          "author": "Goyim",
+          "date": "March 24, 2026",
+          "readTime": "5 min read",
+          "excerpt": "We live in an age where the loudest voices are not always the truest ones. This site exists for one reason only: to say what is plainly true, without apology, without softening, and without fear.",
+          "link": "#"
+        }
+      ]
     },
     {
-      "id": "faith",
-      "title": "Faith",
-      "slug": "faith"
-    },
-    {
-      "id": "society",
-      "title": "Society",
-      "slug": "society"
+      "id": "recent",
+      "title": "Recent Posts",
+      "posts": [
+        {
+          "category": "Faith",
+          "title": "The Word Does Not Bend to the Culture",
+          "author": "Goyim",
+          "date": "Mar 20",
+          "excerpt": "Scripture has stood through every empire that tried to rewrite it. It will outlast this one too."
+        },
+        {
+          "category": "Society",
+          "title": "Why Ordinary People Are Tuning Out the Mainstream",
+          "author": "Goyim",
+          "date": "Mar 16",
+          "excerpt": "Trust in legacy media has collapsed. The question is what fills the void — and whether it's better."
+        },
+        {
+          "category": "Commentary",
+          "title": "Courage Is Not Kindness — But It Is Love",
+          "author": "Goyim",
+          "date": "Mar 10",
+          "excerpt": "Speaking hard truth to someone you care about is harder than staying silent. That's exactly why it matters."
+        },
+        {
+          "category": "Faith",
+          "title": "Standing on Ground That Does Not Move",
+          "author": "Goyim",
+          "date": "Mar 4",
+          "excerpt": "When everything around you shifts, what you're anchored to matters more than anything else."
+        }
+      ]
     },
     {
       "id": "about",
       "title": "About",
-      "slug": "about"
+      "content": "<p>Goyim — Writing plainly about faith, truth, and the world as it is — not as we're told it is. No spin. No agenda. Just the standard.</p>"
     },
     {
-      "id": "contact",
-      "title": "Contact",
-      "slug": "contact"
+      "id": "verse",
+      "title": "Verse of the Week",
+      "content": "\"The truth will set you free — but first it will make you uncomfortable.\"<br><small>John 8:32</small>"
+    },
+    {
+      "id": "topics",
+      "title": "Topics",
+      "items": [
+        {"name": "Commentary", "count": 12},
+        {"name": "Faith", "count": 9},
+        {"name": "Society", "count": 7},
+        {"name": "Culture", "count": 5},
+        {"name": "History", "count": 4}
+      ]
     }
-  ]
+  ],
+  "footerQuote": "\"Buy the truth and do not sell it.\" — Proverbs 23:23",
+  "copyright": "© 2026 The Goyim Standard · All Rights Reserved"
 }
