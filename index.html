@@ -1,1 +1,33 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Website Title</title>\n    <link rel="stylesheet" href="styles.css">\n    <script src="script.js" defer></script>\n</head>\n<body>\n    <header>\n        <h1>Welcome to My Website</h1>\n        <nav>\n            <ul>\n                <li><a href="#" onclick="loadSection('home')">Home</a></li>\n                <li><a href="#" onclick="loadSection('about')">About</a></li>\n                <li><a href="#" onclick="loadSection('services')">Services</a></li>\n                <li><a href="#" onclick="loadSection('contact')">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    <main id="content">\n        <h2>Select a section</h2>\n        <p>Content will load here.</p>\n    </main>\n    <footer>\n        <p>&copy; 2026 My Website</p>\n    </footer>\n    <script>\n        function loadSection(section) {\n            fetch('sections.json')\n                .then(response => response.json())\n                .then(data => {\n                    document.getElementById('content').innerHTML = data[section];\n                })\n                .catch(error => console.error('Error loading section:', error));\n        }\n    </script>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Goyim Standard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p class="tagline">Seeking Truth  ◆  Standing Firm  ◆  Speaking Plain</p>
+            <p class="est">Est. 2024  ·  Commentary & Truth</p>
+        </div>
+
+        <h1>The Goyim Standard</h1>
+        <p class="bible-quote">"Buy the truth and do not sell it." — Proverbs 23:23</p>
+
+        <!-- Navigation tabs will be automatically filled by script.js -->
+        <nav id="navigation"></nav>
+    </header>
+
+    <main id="content">
+        <!-- All section content loads here -->
+    </main>
+
+    <footer>
+        <p class="bible-quote">"Buy the truth and do not sell it." — Proverbs 23:23</p>
+        <p>© 2026 The Goyim Standard · All Rights Reserved</p>
+    </footer>
+</body>
+</html>
