@@ -1,3 +1,34 @@
-<section id="home">
-  <!-- your welcome text and latest posts -->
-</section>
+{
+  "sections": [
+    {
+      "id": "home",
+      "title": "Home",
+      "slug": "home"
+    },
+    {
+      "id": "commentary",
+      "title": "Commentary",
+      "slug": "commentary"
+    },
+    {
+      "id": "faith",
+      "title": "Faith",
+      "slug": "faith"
+    },
+    {
+      "id": "society",
+      "title": "Society",
+      "slug": "society"
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "slug": "about"
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "slug": "contact"
+    }
+  ]
+}
